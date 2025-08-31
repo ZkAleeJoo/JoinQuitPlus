@@ -1,0 +1,42 @@
+# Change the prefix to your liking
+prefix: "&8[&9JoinQuitPlus&8] "
+
+# Configure the welcome and farewell messages!
+config:
+  welcome_message:
+    enabled: true # Enable or disable welcome messages
+    messages:
+      - "&fWelcome to the server &a%player%"
+    # Location_tp this option is 'false' by default to avoid issues
+    # If you set it to 'true', players will be teleported
+    # to the coordinates location every time they join the server
+    location_tp:
+      enabled: false
+      x: 56.0
+      y: 68.0
+      z: 180.0
+      yaw: 90.0
+      pitch: 0.0
+    name_world: "world" # If the option is 'true' change this to your main world's name
+  farewell_message:
+    enabled: true # Enable or disable farewell messages
+    messages:
+      - "&fSee you later &a%player%"
+  play_sound: # This sound will play only when the player joins the server
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING" # Find more: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  # If true the message will be sent to all players
+  # If false the message will be sent only to the player who joins the server
+  broadcast_message: true
+  firework: # Enable or disable fireworks
+    enabled: false
+    color: "RED" # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Color.html
+    type: "BALL" # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html
+    power: 1
+
+# Translate the plugin as you like
+console-message: "&cYou can only use this command as a player"
+no-permission: "&cYou don't have permission to do that, you require the permission &7joinquitplus.reload"
+reload-message: "&cThe plugin was reloaded successfully"
+subcommand-invalid: "&cInvalid subcommand, use &7/joinquitplus help"
+subcommand-specified: "&cPlease specify a subcommand, use &7/joinquitplus help"

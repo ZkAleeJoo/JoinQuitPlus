@@ -1,0 +1,15 @@
+main: jqp.zkaleejoo.JoinQuitPlus
+version: 3.0.2
+name: JoinQuitPlus
+author: ZkAleeJoo
+api-version: 1.13
+
+commands:
+  joinquitplus:
+    description: Main command
+    aliases: [jqp, jqplus, jq]
+
+permissions:
+  joinquitplus.admin:
+    description: Administrator permissions for JoinQuitPlus
+    default: op
